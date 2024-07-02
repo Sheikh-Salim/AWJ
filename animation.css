@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "El Messiri", sans-serif;
+}
+
+
+
+.main {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 8rem;
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/ahcBg.jpg');
+    background-size: cover;
+    background-position: left top;
+    transform-origin: left top;
+    z-index: -1;
+    animation: zoomIn 2s 3.2s ease forwards;
+}
+
+.linear {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(209, 209, 240) 1%, transparent);
+    /* background: linear-gradient(0deg, #001a2b, rgba(0, 26, 43, 0)1%, transparent); */
+    ;
+    position: relative;
+    z-index: 0;
+    transform: translateY(0);
+    animation: forlinear 2s 1s ease forwards;
+    will-change: transform;
+}
+
+@keyframes forlinear {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-1000px);
+    }
+}
+
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.7);
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+    width: 100%;
+    background: #001a2b;
+    position: relative;
+    z-index: 10;
+    transform: translateY(-100%);
+    animation: forNav 2s 2s ease forwards;
+    will-change: transform;
+}
+
+@keyframes forNav {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.navEL a {
+    color: aliceblue;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.navEL a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #D2BC93;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navEL a:hover {
+    color: rgb(210, 188, 147);
+}
+
+.navEL a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navEL a:not(:hover)::before {
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+.background {
+    display: flex;
+    height: 60vh;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+}
+
+.leftToright {
+    color: rgb(210, 188, 147);
+    width: 80%;
+    height: 5vh;
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 20px;
+    right: 1100px;
+    animation-name: leftTOright;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes leftTOright {
+    0% {
+        right: 1000px;
+    }
+
+    100% {
+        right: -50px;
+    }
+}
+
+.rightToleft {
+    opacity: 0;
+    color: white;
+    width: 60%;
+    height: 5vh;
+    font-size: 3rem;
+    position: relative;
+    line-height: 3rem;
+    animation-name: rightTOLEFT;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rightTOLEFT {
+    from {
+        transform: translateX(100%);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateX(10%);
+        opacity: 1;
+    }
+}
+
+.card-button {
+    background: transparent;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    border-color: #D2BC93;
+    display: none;
+    color: #D2BC93;
+}
+
+.card:hover .card-button {
+    display: block;
+}
+
+.card:hover {
+    background-color: #fffaee;
+}
+
+.card-button div {
+    position: relative;
+}
+
+.card:hover .card-button div {
+
+    animation: forCard 0.5s ease forwards;
+    opacity: 0.4;
+}
+
+@keyframes forCard {
+    0% {
+        left: -15px;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+/* .bg-half {
+    height: 600px;
+    width: 100%;
+    background-image: url(images/ahcBgsm.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} */
+.bg-half {
+    height: 600px;
+    width: 100%;
+    background-image: url(images/ahcBgsm.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.bg-half.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.animated.from-left {
+    animation: slideInLeft 1s forwards;
+    opacity: 1;
+}
+
+.animated.from-right {
+    animation: slideInRight 1s forwards;
+    opacity: 1;
+}
+
+.from-left {
+    opacity: 0;
+}
+
+.from-right {
+    opacity: 0;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animated.demo {
+    animation: demo 0.05s ease-in forwards;
+    opacity: 1;
+}
+
+@keyframes demo {
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

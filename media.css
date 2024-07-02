@@ -1,0 +1,157 @@
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+
+    .container,
+    .containerThird,
+    .containerlast {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .navEL {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .cont-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont-img,
+    .cards-cont {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    #cards-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .card {
+        /* width: calc(50% - 20px); */
+        margin: 10px;
+    }
+
+    .containerThird {
+        flex-direction: column;
+    }
+
+    .leftCOntainer,
+    .rightCOntainer {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .hr-finance {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .containerlast {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn-hidden {
+        display: block;
+    }
+
+    .nav-items {
+        margin-left: 0;
+    }
+
+    .navEL {
+        /* opacity: 0;
+        flex-direction: column;
+        align-items: center; */
+        display: none;
+    }
+
+    .navEle {
+        margin: 10px 0;
+    }
+
+    .background {
+        width: 80%;
+    }
+
+    .leftToright,
+    .rightToleft {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        right: 0;
+    }
+
+    .containerformaincard {
+        bottom: -500px;
+    }
+
+
+    .subHeading {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .newcard {
+        flex-direction: column;
+        padding: 5px
+    }
+
+    .imagecardnew,
+    .rightcard {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lastHeading {
+        width: 90%;
+        margin-left: 5px;
+    }
+
+    .logo-btn {
+        margin-top: 10px;
+    }
+
+    .help {
+        font-size: 2rem;
+    }
+
+    .document-content {
+        align-items: center;
+    }
+
+    .document-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .document-image {
+        margin-bottom: 20px;
+    }
+}
