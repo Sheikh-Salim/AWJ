@@ -14,12 +14,42 @@
     <link rel="stylesheet" href="media.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body style="max-width: fit-content">
     <div class="main">
       <div class="nav">
         <div class="logo-boxouter">
           <div class="logo-box">
             <div class="logo-cont">
+              <button class="btn-hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 30 30"
+                >
+                  <path
+                    d="M 2 9 L 2 11 L 48 11 L 48 9 L 2 9 z M 2 24 L 2 26 L 48 26 L 48 24 L 2 24 z M 2 39 L 2 41 L 48 41 L 48 39 L 2 39 z"
+                    fill="#ffffff"
+                  ></path>
+                </svg>
+              </button>
+              <button class="hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 30 30"
+                >
+                  <path
+                    d="M 2 9 L 2 11 L 48 11 L 48 9 L 2 9 z M 2 24 L 2 26 L 48 26 L 48 24 L 2 24 z M 2 39 L 2 41 L 48 41 L 48 39 L 2 39 z"
+                    fill="#ffffff"
+                  ></path>
+                </svg>
+              </button>
               <div><img class="logo" src="images/Logo-04.png" alt="" /></div>
               <div class="logo-btn">
                 <button class="image-button">
@@ -27,51 +57,19 @@
                 </button>
               </div>
             </div>
-            <button class="btn-hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="30"
-                height="30"
-                viewBox="0 0 50 50"
-              >
-                <path
-                  d="M 2 9 L 2 11 L 48 11 L 48 9 L 2 9 z M 2 24 L 2 26 L 48 26 L 48 24 L 2 24 z M 2 39 L 2 41 L 48 41 L 48 39 L 2 39 z"
-                  fill="#ffffff"
-                ></path>
-              </svg>
-            </button>
-            <button class="hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="30"
-                height="30"
-                viewBox="0 0 50 50"
-              >
-                <path
-                  d="M 2 9 L 2 11 L 48 11 L 48 9 L 2 9 z M 2 24 L 2 26 L 48 26 L 48 24 L 2 24 z M 2 39 L 2 41 L 48 41 L 48 39 L 2 39 z"
-                  fill="#ffffff"
-                ></path>
-              </svg>
-            </button>
           </div>
         </div>
         <div class="nav-elements">
-          <div class="nav-items">
-            <ul class="navEL">
-              <li class="navEle"><a href="#">HOME</a></li>
-              <li class="navEle"><a href="#">APPLICATION</a></li>
-              <li class="navEle"><a href="#">AHC DEPARTMENTS</a></li>
-              <li class="navEle"><a href="#">DOCUMENTS</a></li>
-              <li class="navEle"><a href="#">AHC GUIDELINES</a></li>
-              <li class="navEle"><a href="#">APPROVAL CENTER</a></li>
-              <li class="navEle"><a href="#">AHC NEWS</a></li>
-              <li class="navEle"><a href="#">AHC COMMUNITY </a></li>
-            </ul>
-          </div>
+          <ul class="navEL">
+            <li class="navEle"><a href="#">HOME</a></li>
+            <li class="navEle"><a href="#">APPLICATION</a></li>
+            <li class="navEle"><a href="#">AHC DEPARTMENTS</a></li>
+            <li class="navEle"><a href="#">DOCUMENTS</a></li>
+            <li class="navEle"><a href="#">AHC GUIDELINES</a></li>
+            <li class="navEle"><a href="#">APPROVAL CENTER</a></li>
+            <li class="navEle"><a href="#">AHC NEWS</a></li>
+            <li class="navEle"><a href="#">AHC COMMUNITY </a></li>
+          </ul>
         </div>
       </div>
       <div class="linear"></div>
@@ -84,20 +82,16 @@
     </div>
 
     <section class="section">
-      <div class="container">
-        <div class="row">
-          <div class="cont-main">
-            <div class="cont-img from-left">
-              <img src="images/buildingStreet11.jpg" alt="" />
-            </div>
-            <div class="cards-cont from-right">
-              <div class="texts">
-                <p class="app">APPLICATIONS</p>
-                <p class="help">Help you to do better business</p>
-              </div>
-              <div id="cards-container"></div>
-            </div>
+      <div class="cont-main">
+        <div class="cont-img from-left">
+          <img src="images/buildingStreet11.jpg" alt="" />
+        </div>
+        <div class="cards-cont from-right">
+          <div class="texts">
+            <p class="app">APPLICATIONS</p>
+            <p class="help">Help you to do better business</p>
           </div>
+          <div id="cards-container"></div>
         </div>
       </div>
     </section>
@@ -145,7 +139,7 @@
         <div class="lastHeading from-left">
           <h2 class="heading">Employee Guide</h2>
           <h1 class="subHeading">
-            Explore our mission to values, policies and guidelines
+            Explore our mission to values, <br />policies and guidelines
           </h1>
         </div>
         <div class="containerlast"></div>

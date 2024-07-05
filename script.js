@@ -187,19 +187,20 @@ const body = document.querySelector(".main");
 const navEl = document.querySelector(".navEL");
 const hiddenButton = document.querySelector(".btn-hidden");
 hiddenButton.addEventListener("click", function () {
-  body.style.background = "black";
+  // body.style.background = "black";
   body.classList.remove(".background");
-  // backGround.style.display = "none";
+  backGround.style.display = "none";
   navEl.style.display = "block";
+  navEl.style.padding = "15px 0 0 15px";
   hiddenButton.style.display = "none";
   button.style.display = "block";
 });
 const img = "images/ahcBg.jpg";
 button.addEventListener("click", function () {
-  body.style.background = `url(${img})`;
+  // body.style.background = `url(${img})`;
   body.classList.add(".background");
-  // backGround.style.display = "block";
-
+  backGround.style.display = "flex";
+  backGround.style.margin = "50px auto";
   navEl.style.display = "none";
   hiddenButton.style.display = "block";
   button.style.display = "none";

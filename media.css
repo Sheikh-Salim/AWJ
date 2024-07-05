@@ -1,23 +1,91 @@
 /* Responsive adjustments */
-@media screen and (max-width: 1200px) {
-
-    .container,
-    .containerThird,
-    .containerlast {
-        width: 95%;
-        margin: 0 auto;
+@media screen and (min-width: 2500px) {
+    body {
+        font-size: 28px;
     }
 
-    .navEL {
-        width: 90%;
+    .logo {
+        height: 70px;
+    }
+
+    .logo-btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .leftCOntainer {
+        margin-right: 80px;
+    }
+
+    .card-button {
+        width: 80px;
+        height: 80px;
+    }
+
+    .containercards {
+        width: 60%;
+    }
+
+    .hr-finance {
+        width: 85%;
+        margin: 0 0 0 80px;
+
+    }
+
+    .rightcard p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .rightcard button {
+        font-size: 1.8rem;
+    }
+
+    .document-image {
+        width: 35%;
+        height: 20vh;
+        object-fit: cover;
+        margin: 0 20px;
+        border-radius: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .lastHeading {
+        padding: 0 0 30px 20px;
+        width: 50%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .subHeading {
+        font-size: 4rem;
+        line-height: 3.5rem;
+    }
+
+    .app {
+        font-size: 3rem;
+    }
+
+    .help {
+        font-size: 4rem;
+        line-height: 3.5rem;
+    }
+
+    .open-btn,
+    .download-btn {
+        font-size: 1.5rem;
+    }
+
+    .footer-content {
+        max-width: 1500px;
     }
 }
 
-@media screen and (max-width: 992px) {
-    .cont-main {
-        flex-direction: column;
-        align-items: center;
-    }
+@media screen and (max-width: 1400px) {
 
     .cont-img,
     .cards-cont {
@@ -25,9 +93,79 @@
         margin: 20px 0;
     }
 
+    .cont-main {
+        display: flex;
+        margin: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .containerThird,
+    .containerlast {
+        width: 95%;
+    }
+
+    .cards-cont {
+        padding: 0;
+    }
+
+    .hr-finance {
+        margin: 0;
+    }
+
+    .cont-main {
+        display: flex;
+        margin: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .body {
+        font-size: 20px;
+    }
+
+    .navEle a {
+        font-size: 0.8rem;
+    }
+
+    .cont-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightToleft {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    /* .cont-img,
+    .cards-cont {
+        width: 90%;
+        margin: 20px 0;
+    } */
+
     #cards-container {
         flex-wrap: wrap;
         justify-content: center;
+        margin: 10px 0;
+    }
+
+    .newcard {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .imagecardnew,
+    .rightcard {
+        width: 100%;
+        padding: 10px 0;
     }
 
 
@@ -48,7 +186,7 @@
 
     .hr-finance {
         width: 80%;
-        margin: 0 auto;
+
     }
 
     .containerlast {
@@ -57,6 +195,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .main {
+        margin-bottom: 5rem;
+    }
+
     .btn-hidden {
         display: block;
     }
@@ -90,27 +232,32 @@
 
     .containerformaincard {
         bottom: -500px;
+        opacity: 0;
     }
 
+    .heading {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
 
     .subHeading {
         font-size: 2rem;
         line-height: 2.2rem;
     }
 
+    .lastHeading {
+        width: 90%;
+        margin: 70px 0 0 0;
+    }
+
     .card {
         width: 40%;
     }
 
-    .newcard {
-        flex-direction: column;
-        padding: 5px
-    }
 
-    .imagecardnew,
-    .rightcard {
-        width: 100%;
-        padding: 10px 0;
+    .footer-flex {
+        justify-content: space-between;
+        width: 300px;
     }
 
     .footer-content {
@@ -120,28 +267,61 @@
     .footer-section {
         margin-bottom: 20px;
     }
+
+    .footer-bottom {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    body {
+        font-size: small;
+    }
+
+    .main {
+        margin-bottom: 3rem;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
     .logo-cont {
-        flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+    }
+
+    .section {
+        padding: 2rem 0;
     }
 
     .lastHeading {
-        width: 90%;
-        margin-left: 5px;
+        margin: 70px auto 0 auto;
     }
 
-    .logo-btn {
-        margin-top: 10px;
+
+    .card {
+        width: 100%;
+        height: 17vh;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        margin: 10px 0;
     }
+
+    .cards-cont {
+        margin: 0;
+    }
+
 
     .help {
         font-size: 2rem;
+        line-height: 2.2rem;
     }
 
     .document-content {
+        align-items: center;
+    }
+
+    .cont {
         align-items: center;
     }
 
@@ -152,6 +332,34 @@
     }
 
     .document-image {
-        margin-bottom: 20px;
+        margin: 0 0 20px 0;
+        width: 80%;
+
     }
+
+    .containerThird {
+
+        padding-bottom: 2rem;
+    }
+
+    .hr-finance {
+        display: block;
+        font-size: 0.9rem;
+    }
+
+    .containercards {
+        padding: 10px 0;
+        width: 95%;
+    }
+
+    .continner {
+        padding: 0 25px;
+    }
+
+    .leftCOntainer,
+    .rightCOntainer {
+        width: 90%;
+        margin: 10px auto;
+    }
+
 }
