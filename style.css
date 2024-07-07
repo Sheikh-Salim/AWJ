@@ -9,6 +9,7 @@
 
 body {
     overflow-x: hidden;
+    max-width: 1600px;
 }
 
 .logo-boxouter {
@@ -81,8 +82,8 @@ body {
     color: aliceblue;
     width: 90%;
     display: flex;
-    justify-content: space-between;
-    margin: auto;
+    justify-content: space-around;
+    margin: 0 0 0 44px;
 }
 
 

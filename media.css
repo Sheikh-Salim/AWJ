@@ -157,21 +157,19 @@
         margin: 10px 0;
     }
 
-    .newcard {
-        flex-direction: column;
-        padding: 0;
-    }
+
 
     .imagecardnew,
     .rightcard {
         width: 100%;
-        padding: 10px 0;
+        padding: 10px 10px;
     }
 
 
     .card {
         /* width: calc(50% - 20px); */
         margin: 10px;
+        height: 180px;
     }
 
     .containerThird {
@@ -215,7 +213,7 @@
     }
 
     .navEle {
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
     .background {
@@ -238,6 +236,11 @@
     .heading {
         font-size: 1.8rem;
         line-height: 2rem;
+    }
+
+    .newcard {
+        flex-direction: column;
+        padding: 0;
     }
 
     .subHeading {
