@@ -146,12 +146,12 @@ datalast.map((item, index) => {
   lastContainer.appendChild(cardWrapper);
 });
 
-const element = document.querySelector(".bg-half");
-console.log(element);
-const rect = element.getBoundingClientRect();
+// const element = document.querySelector(".bg-half");
+// console.log(element);
+// const rect = element.getBoundingClientRect();
 
-console.log("X:", rect.x, "Y:", rect.y);
-console.log("Width:", rect.width, "Height:", rect.height);
+// console.log("X:", rect.x, "Y:", rect.y);
+// console.log("Width:", rect.width, "Height:", rect.height);
 
 const allSections = document.querySelectorAll(".section");
 // Animation on scroll
@@ -190,7 +190,7 @@ hiddenButton.addEventListener("click", function () {
   body.classList.remove(".background");
   backGround.style.display = "none";
   navEl.style.display = "block";
-  navEl.style.padding = "15px 0 0 32px";
+  navEl.style.padding = " 2% 5%";
   navEl.style.margin = "0";
   hiddenButton.style.display = "none";
   button.style.display = "block";
@@ -200,6 +200,8 @@ button.addEventListener("click", function () {
   body.classList.add(".background");
   backGround.style.display = "flex";
   backGround.style.margin = "50px auto";
+  navEl.style.padding = "0";
+  navEl.style.margin = "0 0 0 44px";
   navEl.style.display = "none";
   hiddenButton.style.display = "block";
   button.style.display = "none";

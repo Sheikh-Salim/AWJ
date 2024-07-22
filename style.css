@@ -10,6 +10,7 @@
 body {
     overflow-x: hidden;
     max-width: 1600px;
+    margin: auto;
 }
 
 .logo-boxouter {
@@ -152,7 +153,7 @@ body {
     margin: 10px;
     width: 25%;
     vertical-align: top;
-    height: 25vh;
+    height: 180px;
     max-width: 100rem;
     display: grid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -171,8 +172,9 @@ body {
 
 .containerThird {
     display: flex;
+    align-items: center;
     width: 90%;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     margin: auto;
 }
 
@@ -193,35 +195,9 @@ body {
 
 .rightCOntainer {
     color: #8C8C8C;
-    width: 45%;
-    margin: 32px 80px 0 0;
-}
-
-.hr-finance {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    width: 50%;
-    margin: 0 0 0 80px;
-}
-
-.same a {
-    color: #D2BC93;
-    text-decoration: none;
-}
-
-.imagecardnew {
-    width: 35%;
-    height: 300px;
-}
-
-.imagecardnew img {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
+    width: 80%;
+    padding: 0 0 0 10px;
+    /* margin: 32px 80px 0 0; */
 }
 
 .third {
@@ -239,12 +215,44 @@ body {
 
 .containercards {
     width: 80%;
-    padding: 50px 15px;
+    padding: 40px 15px;
     background: white;
     display: flex;
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+#select {
+    padding: 0 4%;
+}
+
+.hr-finance {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.same a {
+    font-size: 1.08rem;
+    color: #D2BC93;
+    text-decoration: none;
+}
+
+.imagecardnew {
+    width: 45%;
+    height: 300px;
+}
+
+.imagecardnew img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
 
 .newcard {
     display: flex;
@@ -254,11 +262,10 @@ body {
 }
 
 .rightcard {
-    padding-left: 40px;
+    padding-left: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 500px;
+    width: 50%;
 }
 
 .rightcard p {
